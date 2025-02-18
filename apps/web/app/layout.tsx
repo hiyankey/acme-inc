@@ -1,10 +1,12 @@
 import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+
 
 import './globals.css';
 
-const geist = Geist({ subsets: ['latin'], variable: '--font-geist'});
+
 
 export const metadata: Metadata = {
   title: 'Acme',
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
-      <body className={`${geist.variable} antialiased`}>{children}</body>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }
