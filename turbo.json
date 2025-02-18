@@ -3,13 +3,16 @@
   "globalDependencies": [
     "**/.env.*local"
   ],
+  "ui":"tui",
   "tasks": {
     "dev": {
-      "cache": false,
+      "dependsOn": ["^db:generate"],
+         "cache": false,
       "persistent": true
     },
     "build": {
       "dependsOn": [
+        "^db:generate",
         "^build"
       ],
       "outputs": [
@@ -19,6 +22,17 @@
     },
     "lint": {},
     "test": {},
-    "test:e2e": {}
+    "test:e2e": {},
+
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate": {
+      "cache": false,
+      "persistent": true
+    },
+    "db:deploy": {
+      "cache": false
+    }
   }
 }

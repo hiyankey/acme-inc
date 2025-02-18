@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "pnpm build --watch",
     "build": "tsc -b -v",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\""
+    "lint": "biome lint \"{src,apps,libs,test}/**/*.ts\""
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -37,7 +37,7 @@
     "@nestjs/mapped-types": "*"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+"@repo/biome-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^20.3.1",
     "ts-loader": "^9.4.3",
