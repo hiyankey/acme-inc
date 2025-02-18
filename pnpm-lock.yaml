@@ -11,6 +11,9 @@ importers:
       '@repo/biome-config':
         specifier: workspace:*
         version: link:packages/biome-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:packages/typescript-config
       turbo:
         specifier: ^2.4.2
         version: 2.4.2
