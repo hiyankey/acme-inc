@@ -5,4 +5,21 @@
     --font-*: initial;
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
+    --text-sm: 1.4rem;
+    --text-md: 1.6rem;
+    --text-lg: 1.8rem;
+    --text-xl: 2rem;
+
+
+}
+
+:root {
+    --bg-main: hsl(217, 6%, 96%)
+   
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    @apply font-sans text-md;
 }
