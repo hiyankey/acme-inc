@@ -8,6 +8,7 @@ import './globals.css';
 
 
 
+
 export const metadata: Metadata = {
   title: 'Acme',
 };
@@ -19,3 +20,4 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
     </html>
   );
 }
+
