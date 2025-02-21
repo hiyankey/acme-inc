@@ -5,6 +5,7 @@
     --font-*: initial;
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
+    --text-xs: 1.2rem;
     --text-sm: 1.4rem;
     --text-md: 1.6rem;
     --text-lg: 1.8rem;
